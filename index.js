@@ -1,3 +1,6 @@
+const inquirer = require("inquirer");
+const fs = require("fs");
+
 // array of questions for user
 const questions = [
     {
@@ -40,6 +43,7 @@ const questions = [
     {
         type: "list",
         message: "Select whether to include the Contributor Covenant:",
+        name: "contribute",
         choices: [
             'Yes', 
             'No',
@@ -52,14 +56,15 @@ const questions = [
     },
 ];
 
-// function to write README file
-function writeToFile(fileName, data) {
-}
+// // function to write README file
+// function writeToFile(fileName, data) {
 
-// function to initialize program
-function init() {
+// }
 
-}
+// // function to initialize program
+// function init() {
 
-// function call to initialize program
-init();
+// }
+
+// // function call to initialize program
+// init();
