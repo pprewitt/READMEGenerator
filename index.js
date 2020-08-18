@@ -1,6 +1,55 @@
 // array of questions for user
 const questions = [
-
+    {
+        type: "input",
+        message: "Please enter a project title: ",
+        name: "title"
+    },
+    {
+        type: "input",
+        message: "Please enter a project description:",
+        name: "description"
+    },
+    {
+        type: "input",
+        message: "Enter installation instructions",
+        name: "installation"
+    },
+    {
+        type: "input",
+        message: "Provide instructions and examples for use",
+        name: "usage"
+    },
+    {
+        type: "input",
+        message: "Who contributed to your project? Did you follow any tutorials or reference any guides?",
+        name: "Credits"
+    },
+    {
+        type: "list",
+        message: "Please select an open source license:",
+        name: "license",
+        choices: [
+            'Apache 2.0 License', 
+            'GNU GPL v3',
+	        'MIT License',
+ 	        'ISC License (ISC)',
+	        'None'
+        ]
+    },
+    {
+        type: "list",
+        message: "Select whether to include the Contributor Covenant:",
+        choices: [
+            'Yes', 
+            'No',
+        ]
+    },
+    {
+        type: "input",
+        message: "How do you test this project?",
+        name: "tests"
+    },
 ];
 
 // function to write README file
