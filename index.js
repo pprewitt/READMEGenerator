@@ -1,8 +1,14 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+const axios = require("axios");
 
-// array of questions for user
-const userInputs = [
+
+writePage();
+
+async function writePage() {
+  
+  try {
+    const { pageElements } = await inquirer.prompt([
     {
         type: "input",
         message: "Please enter your email address: ",
@@ -66,30 +72,41 @@ const userInputs = [
         message: "How do you test this project?",
         name: "test"
     },
-];
 
-// function to write README file
-inquirer.prompt(userInputs).then(function (data) {
-    let filename = ("README.md");
-   fs.writeFile(fileName, data, function(err) {
-    if (err) {
-        return console.log(err);
-      }
-    
-      console.log("README has been generated!");
-})
+    ]);
 
-// function to initialize program
-function init() {
-    let title = response.title
-    let description = response.description
-    let installation = response.installation
-    let usage = response.usage
-    let credits = response.credits
-    let license = response.license
-    let test = response.test
 
+  
+  } catch (err) {
+    console.log(err);
+  }
 }
 
-// function call to initialize program
-init();
+// // function to write README file
+// inquirer.prompt(userInputs).then(function (data) {
+//     let filename = ("README.md");
+//    fs.writeFile(fileName, data, function(err) {
+//     if (err) {
+//         return console.log(err);
+//       }
+    
+//       console.log("README has been generated!");
+// })
+
+// // function to initialize program
+// function init() {
+//     let email = response.email
+    
+//     let gitusername = response.gitusername
+//     let title = response.title
+//     let description = response.description
+//     let installation = response.installation
+//     let usage = response.usage
+//     let credits = response.credits
+//     let license = response.license
+//     let test = response.test
+
+// }
+
+// // function call to initialize program
+// init();
