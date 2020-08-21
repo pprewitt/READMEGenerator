@@ -1,11 +1,11 @@
 
     
  
-# README Generator  
+# README generator  
     
  
  ## Description 
- This command line application will walk the user through a series of prompts that will populate and construct a README file for their own project or application.  
+ This command line application will walk the user through a series of prompts that will populate and construct a README file for their own project or application. 
     
  
 # Table of Contents 
@@ -22,11 +22,11 @@
     
  
 ## Installation 
- You will need Node.js installed on your computer to run this application as it is built for the command line. Once Node is installed, you can fork or clone this repository, then open it via your integrated terminal. "node index.js" will initialize the application, then you will jsut need to answer the prompts as appropriate for your project. 
+ install this wa 
     
  
 ## Usage 
- This application was developed as a class project to explore and learn node and asyncronous JS. The application is a simple interface for creating markdown for your README files.
+ use it thusly
     
  
 ## License 
@@ -34,11 +34,11 @@
     
  
 ## Contribution 
- Hard to know how one might contribute to this project in particular, but if you see something worth developing further, please feel free to contact me.My contact info is listed below. 
+ install thus 
     
  
 ## Tests 
- Once you have this installed, you can test by running the 'node index.js' command in your terminal. 
+ test thus 
     
  
 ## Contact 
