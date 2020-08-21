@@ -1,6 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const axios = require("axios");
+const generateMarkdown = require('./utils/generateMarkdown');
 const util = require('util');
 
 const writeFileAsync = util.promisify(fs.writeFile); 
@@ -17,8 +18,6 @@ const readMePrompts = () => {
     message: "Please enter your github username: ",
     name: "gitusername"
 },
-
-
 {
     type: "input",
     message: "Please enter a project title: ",
@@ -69,23 +68,6 @@ const readMePrompts = () => {
 },
 
 ]);
-}
-const generateMarkdown = ({email, gitusername, title, description, installation, usage, credits, license, contribute, test }) =>{
-    return `
-    \n \n# ${title}  
-    \n \n ## Description \n ${description} 
-    \n \n# Table of Contents \n- [Installation](#installation) \n- 
-    [Usage](#usage) \n- [Contribution](#contribution) \n- 
-    [Tests](#tests) \n- [License](#license) \n- [Contact](#contact) \n \n  
-    \n \n## Installation \n ${installation} 
-    \n \n## Usage \n ${usage}
-    \n \n## Credits \n ${credits}
-    \n \n## License \n This application is licensed: ${license}
-    \n \n## Contribution \n ${contribute} 
-    \n \n## Tests \n ${test} 
-    \n \n## Questions/Contact \n Contact me: 
-    \n \n [GitHub](https://github.com/${gitusername}) \n \n Email: [${email}](mailto:${email}); `
-// readme file text
 }
 
 const init= async () =>{
