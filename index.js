@@ -81,7 +81,7 @@ const generateMarkdown = ({email, gitusername, title, description, installation,
     [Usage](#usage) \n- [Contribution](#contribution) \n- 
     [Tests](#tests) \n- [License](#license) \n- [Questions](#questions) \n \n  
     ## Installation \n ${installation} 
-    \n \n## Usage \n ${usage} // Usage
+    \n \n## Usage \n ${usage}
     \n \n## License \n This application is covered by: ${license}
     \n \n## Contribution \n ${contribute} 
     \n \n## Tests \n ${test} 
@@ -94,7 +94,7 @@ const init= async () =>{
     try {
         const answers = await readMePrompts();
         const README = generateMarkdown(answers);
-        await writeFileAsync(README.md, answers)
+        await writeFileAsync("README.md", README)
         console.log("README has been generated!")
     } catch (error) {
         console.log (error)
