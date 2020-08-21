@@ -52,18 +52,15 @@ const readMePrompts = () => {
         'Apache 2.0 License', 
         'GNU GPL v3',
         'MIT License',
-         'ISC License (ISC)',
-        'None'
+        'ISC License (ISC)',
+        'Unlicensed'
     ]
 },
 {
-    type: "list",
-    message: "Select whether to include the Contributor Covenant:",
+    type: "input",
+    message: "Specify instructions to contribute to your project/code:",
     name: "contribute",
-    choices: [
-        'Yes', 
-        'No',
-    ]
+    
 },
 {
     type: "input",
