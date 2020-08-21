@@ -80,12 +80,12 @@ const generateMarkdown = ({email, gitusername, title, description, installation,
     \n \n# Table of Contents \n- [Installation](#installation) \n- 
     [Usage](#usage) \n- [Contribution](#contribution) \n- 
     [Tests](#tests) \n- [License](#license) \n- [Questions](#questions) \n \n  
-    ## Installation \n ${installation} 
+    \n \n## Installation \n ${installation} 
     \n \n## Usage \n ${usage}
-    \n \n## License \n This application is covered by: ${license}
+    \n \n## License \n This application is is licensed: ${license}
     \n \n## Contribution \n ${contribute} 
     \n \n## Tests \n ${test} 
-    \n \n## Questions \n If you have any questions feel free to contact: \n \n 
+    \n \n## Questions \n Questions? contact me: \n \n 
     [GitHub](https://github.com/${gitusername}) \n \n Email: [${email}](mailto:${email}); `
 // readme file text
 }

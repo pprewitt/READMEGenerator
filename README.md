@@ -1,11 +1,11 @@
 
     
  
-# README thing  
+# README Generator  
     
  
  ## Description 
- describe it thus 
+ This command line application will guide the user through a series of prompts to construct a README. README file should include a table of contents along with description, installation and usage sections. 
     
  
 # Table of Contents 
@@ -19,16 +19,18 @@
 - [Questions](#questions) 
  
   
-    ## Installation 
- install it thus 
+    
+ 
+## Installation 
+ You are Free to fork this repo, open it in VSCODE and initialize with your terminal. 
     
  
 ## Usage 
- use it thus // Usage
+ This app should be used to create formatted README's.
     
  
 ## License 
- This application is covered by: None
+ This application is is licensed: None
     
  
 ## Contribution 
@@ -36,13 +38,13 @@
     
  
 ## Tests 
- test it thus 
+ npm test 
     
  
 ## Questions 
- If you have any questions feel free to contact: 
+ Questions? contact me: 
  
  
     [GitHub](https://github.com/pprewitt) 
  
- Email: [email](mailto:email); 
+ Email: [philip.prewitt@gmail.com](mailto:philip.prewitt@gmail.com); 
