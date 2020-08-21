@@ -1,9 +1,9 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const axios = require("axios");
-const util = require('util')
+const util = require('util');
 
-const writeFileAsync = util.promisify(fs.writeFile) 
+const writeFileAsync = util.promisify(fs.writeFile); 
 
 const readMePrompts = () => {
     return inquirer.prompt([
@@ -72,7 +72,7 @@ const readMePrompts = () => {
 },
 
 ]);
-
+}
 const generateMarkdown = ({email, gitusername, title, description, installation, usage, credits, license, contribute, test }) =>{
     return `
     \n \n# ${title}  // Title
@@ -84,7 +84,7 @@ const generateMarkdown = ({email, gitusername, title, description, installation,
     \n \n## Usage \n ${usage} // Usage
     \n \n## License \n This application is covered by: ${license} // License Section
     \n \n## Contribution \n ${contribute} // Contribution 
-    \n \n## Tests \n ${tests} // Tests
+    \n \n## Tests \n ${test} // Tests
     \n \n## Questions \n If you have any questions feel free to contact: \n \n // Questions & Contact
     [GitHub](https://github.com/${gitusername}) \n \n Email: [${email}](mailto:${email}); `
 // readme file text
@@ -125,7 +125,7 @@ const init= async () =>{
     try {
         const answers = await readMePrompts();
         const README = generateMarkdown(answers);
-        await writeFileAsync(README.md, data)
+        await writeFileAsync(README.md, answers)
         console.log("README has been generated!")
     } catch (error) {
         console.log (error)
@@ -134,4 +134,4 @@ const init= async () =>{
 }
 
 // function call to initialize program
-init();
+init()
