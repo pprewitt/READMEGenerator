@@ -48,10 +48,10 @@ const readMePrompts = () => {
     message: "Please select an open source license:",
     name: "license",
     choices: [
-        'Apache 2.0 License', 
-        'GNU GPL v3',
-        'MIT License',
-        'ISC License (ISC)',
+        'Apache', 
+        'GNU',
+        'MIT',
+        'ISC',
         'Unlicensed'
     ]
 },

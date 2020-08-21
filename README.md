@@ -1,6 +1,6 @@
 
 
-  ![npm](https://img.shields.io/static/v1?label=license&message=GNU GPL v3&color=blue)
+  ![npm](https://img.shields.io/static/v1?label=license&message=MIT&color=blue)
   
  
  # README Generator  
@@ -36,7 +36,7 @@
   
  
 ## License 
- This application is licensed: GNU GPL v3
+ This application is licensed: MIT
   
  
 ## Contribution 
