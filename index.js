@@ -79,11 +79,12 @@ const generateMarkdown = ({email, gitusername, title, description, installation,
     [Tests](#tests) \n- [License](#license) \n- [Contact](#contact) \n \n  
     \n \n## Installation \n ${installation} 
     \n \n## Usage \n ${usage}
+    \n \n## Credits \n ${credits}
     \n \n## License \n This application is licensed: ${license}
     \n \n## Contribution \n ${contribute} 
     \n \n## Tests \n ${test} 
-    \n \n## Contact \n Contact me: \n \n 
-    [GitHub](https://github.com/${gitusername}) \n \n Email: [${email}](mailto:${email}); `
+    \n \n## Questions/Contact \n Contact me: 
+    \n \n [GitHub](https://github.com/${gitusername}) \n \n Email: [${email}](mailto:${email}); `
 // readme file text
 }
 
