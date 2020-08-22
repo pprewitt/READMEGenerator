@@ -11,7 +11,7 @@ const generateMarkdown = ({email, gitusername, title, description, installation,
   \n \n## Installation \n ${installation} 
   \n \n## Usage \n ${usage}
   \n \n## Credits \n ${credits}
-  \n \n## License \n This application is licensed: ${license}
+  \n \n## License \n This application is ${license} licensed
   \n \n## Contribution \n ${contribute} 
   \n \n## Tests \n ${test} 
   \n \n## Questions/Contact \n Contact me: 

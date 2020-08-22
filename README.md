@@ -36,7 +36,7 @@
   
  
 ## License 
- This application is licensed: MIT
+ This application is MIT licensed
   
  
 ## Contribution 
