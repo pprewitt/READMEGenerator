@@ -28,7 +28,7 @@
   
  
 ## Usage 
- This application was developed as a class project to explore and learn node and asyncronous JS. The application is a simple interface for creating markdown for your README files.
+ This application was developed as a class project to explore and learn node and asyncronous JS. The application is a simple interface for creating markdown for your README files. Here is a video demoing its successful use: https://youtu.be/W7ysbJRT8oM
   
  
 ## Credits 
